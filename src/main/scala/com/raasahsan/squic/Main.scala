@@ -16,7 +16,6 @@ object Main extends IOApp {
     } yield ()
   }
 
-  override def run(args: List[String]): IO[ExitCode] = {
+  override def run(args: List[String]): IO[ExitCode] =
     app.useForever.as(ExitCode.Success)
-  }
 }
